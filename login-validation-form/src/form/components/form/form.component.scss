@@ -1,0 +1,41 @@
+.form{
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(236, 221, 231);
+    width: 500px;
+    height: 300px;
+    margin: 5rem auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.input {
+    border-radius: 10px;
+    padding: 6px 20px;
+    margin: 2rem;
+    font-size: 25px;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    margin: 2rem 2rem 1rem;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    visibility: hidden;
+    transition: visibility 5s;
+}
+
+.hint {
+    font-weight: bold;
+    flex: 1;
+    min-height: 2rem;
+    max-height: 70px;
+    overflow: auto;
+}

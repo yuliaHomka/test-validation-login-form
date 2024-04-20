@@ -1,0 +1,12 @@
+<form class="form">
+    <label>
+        <input type="checkbox" [(ngModel)]="formService.useRandomAnswer" [ngModelOptions]="{standalone: true}"> 
+        Получать рандомный ответ
+    </label>
+    <input [(ngModel)]="formService.inputValue" [ngModelOptions]="{standalone: true}" class="input">
+    <div [ngClass]="{'error': (formService.hasErrorOrIncorrectLogin$ | async)}" class="hint">{{ formService.hint }}</div>
+    <button (click)="onSendButtonClick()" [disabled]="formService.isButtonDisabled" class="btn"> Отправить </button>
+    @if (formService.timerValue$ | async; as timer) {
+        <div> Повторная отправка возможна через {{ timer | number: '2.0-1' }} секунд</div>
+    }
+</form>
