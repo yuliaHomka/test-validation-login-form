@@ -1,7 +1,7 @@
 <form class="form">
     <label>
         <input type="checkbox" [(ngModel)]="formService.useRandomAnswer" [ngModelOptions]="{standalone: true}"> 
-        Получать рандомный ответ
+        Случайная валидация на клиенте
     </label>
     <input [(ngModel)]="formService.inputValue" [ngModelOptions]="{standalone: true}" class="input">
     <div [ngClass]="{'error': (formService.hasErrorOrIncorrectLogin$ | async)}" class="hint">{{ formService.hint }}</div>
