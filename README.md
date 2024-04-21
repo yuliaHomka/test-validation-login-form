@@ -7,7 +7,9 @@
 
 
 ## Setup
-Рекурсивная установка npm зависимостей:  
+
+Рекурсивная установка npm зависимостей:
+`npm install npm-run-all`
 `npm install`
 
 ## Build and Run
