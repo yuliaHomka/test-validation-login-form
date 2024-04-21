@@ -12,6 +12,6 @@
 
 ## Build and Run
 Сборка и запуск фронтенда + moсk API сервера:  
-`npm run`  
+`npm start`  
 URL формы логина:  
 [http://localhost:4200/](http://localhost:4200/)
