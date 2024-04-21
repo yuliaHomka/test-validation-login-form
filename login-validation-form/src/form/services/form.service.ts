@@ -21,7 +21,7 @@ export class FormService {
 
   public timerValue$ = new BehaviorSubject<number>(0);
 
-  public useRandomAnswer = false;
+  public forceLocalValidation = false;
 
   private hasServerError = false;
 
@@ -34,14 +34,14 @@ export class FormService {
     }
 
     this.isButtonDisabled = true;
-    this.vaidationRepository.validateLogin(login, this.useRandomAnswer).pipe(
+    this.vaidationRepository.validateLogin(login, this.forceLocalValidation).pipe(
       catchError(() => {
         this.hasServerError = true;
         return of(null);
       }),
       switchMap((result: ValidationAnswer | null) => {
         if (result?.valid) {
-          this.hint = login;
+          this.hint = `Текущий логин: ${login}`;
         }
         else {
           this.hint = this.hasServerError ?  SERVER_ERROR_TEXT : INCORRECT_LOGIN_TEXT;

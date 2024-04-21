@@ -1,6 +1,6 @@
 <form class="form">
     <label>
-        <input type="checkbox" [(ngModel)]="formService.useRandomAnswer" [ngModelOptions]="{standalone: true}"> 
+        <input type="checkbox" [(ngModel)]="formService.forceLocalValidation" [ngModelOptions]="{standalone: true}"> 
         Случайная валидация на клиенте
     </label>
     <input [(ngModel)]="formService.inputValue" [ngModelOptions]="{standalone: true}" class="input">

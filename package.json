@@ -1,5 +1,13 @@
 {
+    "name": "login-validation",
+    "version": "0.0.1",
     "scripts": {
-        "start": "cd login-validation-form && ng serve & node server/server.js"
+        "postinstall": "cd login-validation-form & npm install",
+        "start": "npm-run-all --parallel server client",
+        "client": "npm run --prefix login-validation-form start",
+        "server": "node server/server.js"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
     }
 }

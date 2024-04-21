@@ -8,8 +8,8 @@ import { ValidationAnswer } from '../model/validation-answer.interface';
 })
 export class VaidationRepositoryService {
   public constructor(private http: HttpClient) {}
-  public validateLogin(login: string, useRandomAnswer = false): Observable<ValidationAnswer> {
-    if (useRandomAnswer) {
+  public validateLogin(login: string, forceLocalValidation = false): Observable<ValidationAnswer> {
+    if (forceLocalValidation) {
       return of({ valid: Math.random() > 0.5 }).pipe(
         delay(Math.random() * 3000),
       )
