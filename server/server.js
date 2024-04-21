@@ -1,7 +1,7 @@
 const http = require("http");
 var url = require("url");
 
-allowedLogins = ['admin, mvideo', 'dev', 'user', '123'];
+allowedLogins = ['admin', 'mvideo', 'dev', 'user', '123'];
 
 const VALIDATION_PATH_NAME = '/validate';
 const QUERY_LOGIN = 'login';

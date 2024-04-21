@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "start": "cd login-validation-form && ng serve & node server/server.js"
+    }
+}

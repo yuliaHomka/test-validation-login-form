@@ -6,8 +6,6 @@
 Отправлять на проверку данные можно не чаще раза в минуту (пустое значение не отправляется).
 После отправки логина под кнопкой "Отправить" поялвляеся таймер, сколько секунд еще кнопка будет некликабельна.
 
-Команда `npm start` (внутри папки `login-validation-form`) запускает выполнение `ng serve & node ../server/server.js`
-
 # LoginValidationForm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
